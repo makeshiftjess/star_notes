@@ -1,7 +1,7 @@
 @font-face {
     font-family: "amatic_scbold";
-    src: url('fonts/amaticsc-bold-webfont.woff2') format('woff2'),
-        url('fonts/amaticsc-bold-webfont.woff') format('woff');
+    src: url('../fonts/amaticsc-bold-webfont.woff2') format('woff2'),
+        url('../fonts/amaticsc-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: "space_grotesklight";
-    src: url('fonts/spacegrotesk-variablefont_wght-webfont.woff2') format('woff2'),
-        url('fonts/spacegrotesk-variablefont_wght-webfont.woff') format('woff');
+    src: url('../fonts/spacegrotesk-variablefont_wght-webfont.woff2') format('woff2'),
+        url('../fonts/spacegrotesk-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -19,7 +19,7 @@
 body {
     margin: 0px;
     height: 100vh;
-    background: #111 url("img/bg.png") top center/cover repeat-x fixed;
+    background: #111 url("../img/bg.png") top center/cover repeat-x fixed;
     font-family: 'Open Sans', sans-serif;
     color: #256577;
 }
@@ -67,6 +67,7 @@ body {
     font-family: "space_grotesklight", sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
+    line-height: 1.6rem;
 }
 
 #close {
@@ -89,7 +90,7 @@ h1 {
     font-weight: normal;
     margin: 0;
     padding-left: 25px;
-    background: url(img/h1.png) no-repeat left;
+    background: url("../img/h1.png") no-repeat left;
     background-size: 15px;
     font-size: 1.5rem;
     font-family: "amatic_scbold", sans-serif;
@@ -99,9 +100,10 @@ h1 {
 
 .image {
     border-radius: 10px;
-    border: 3px solid #2d606e;
+    border: 3px solid #1a2529;
     margin: 20px 0px;
     max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 }
 
 .center {
@@ -156,26 +158,25 @@ h1 {
     text-align: center;
     color: #2d606e;
     font-size: 1rem;
-    /* font-family: "amatic_scbold", sans-serif;     */
     font-family: "space_grotesklight", sans-serif;
 }
 
 a {
-    color: #2d606e;
+    color: #496d77;
     text-decoration: none;
     border-bottom: 1px dotted;
 }
 
 a:hover {
-    color: #438da1;
+    color: #5e94a3;
 }
 
 #parallax {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(img/parallax-2.png) top center/contain repeat fixed,
-        url(img/parallax-1.png) top center/contain repeat fixed;
+    background: url("../img/parallax-2.png") top center/contain repeat fixed,
+        url("../img/parallax-1.png") top center/contain repeat fixed;
 }
 
 ::-webkit-scrollbar {
